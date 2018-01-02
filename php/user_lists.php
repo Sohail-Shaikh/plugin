@@ -202,10 +202,5 @@ class Manage_List extends WP_List_Table {
 require_once('function_list.php');
 $lists=new My_List();
 $lists->user_list();
-// function delete($data)
-// {
-// 	global $wpdb;
-// 	$delete = $wpdb->query("DELETE from wp_manage_list WHERE user_no=".$data." limit 1");
-// 	return $delete;
-// }
+
 ?>
