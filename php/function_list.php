@@ -18,26 +18,6 @@ class My_List extends WP_List_Table
 		//$this->user_list();
 	}
 
-	// public static function get_manage_list( $per_page = 5, $page_number = 1 ) {
-
-	// 	global $wpdb;
-
-	// 	$sql = "SELECT * FROM {$wpdb->prefix}manage_list";
-
-	// 	if ( ! empty( $_REQUEST['orderby'] ) ) {
-	// 		$sql .= ' ORDER BY ' . esc_sql( $_REQUEST['orderby'] );
-	// 		$sql .= ! empty( $_REQUEST['order'] ) ? ' ' . esc_sql( $_REQUEST['order'] ) : ' ASC';
-	// 	}
-
-	// 	$sql .= " LIMIT $per_page";
-	// 	$sql .= ' OFFSET ' . ( $page_number - 1 ) * $per_page;
-
-
-	// 	$result = $wpdb->get_results( $sql, 'ARRAY_A' );
-
-	// 	return $result;
-	// }
-
 	public function display_Old_Data($data)
 	{
 		global $wpdb;
@@ -79,7 +59,4 @@ class My_List extends WP_List_Table
 	}
 }
 new My_List();
-//print_r($list);
-// http://localhost/wordpress/wp-content/plugins/wp-manage_list/wp-image/admin.php?page=menu-list
-// C:\xampp\htdocs\wordpress\wp-content\plugins\wp-manage_list\wp-image
 ?>
